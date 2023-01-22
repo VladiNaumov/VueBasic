@@ -1,5 +1,5 @@
 const App = {
-    // имя метода data() - обязательно
+    // имя метода data() - обязательно (здесь хранятся данные )
     data(){
 
         return {
@@ -10,20 +10,27 @@ const App = {
 
         }
     },
+    // это метод для работы с данными
     methods:{
         inputChangeHandler(event){
             this.inputValue = event.target.value
 
         },
         addNewNote(){
-            this.notes.push(this.inputValue)
-            this.inputValue = ''
+            if(this.inputValue !=='')
+            {
+                this.notes.push(this.inputValue)
+                this.inputValue = ''
+            }
+            
+            
         },
+        removeNode(idx){
+            this.notes.splice(idx, 1)
+        }
         
     }
 }
 
 Vue.createApp(App).mount('#app')
 
-// вывод сообщений из массива с помощью цикла FOR
-// реализовано добавление заметки по enter 

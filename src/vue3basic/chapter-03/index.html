@@ -10,7 +10,7 @@
 
 <body>
     <div class="conteiner pt-5" id="app">
-        <div class="card center">
+        <div class="card">
             <h1>{{ title }}</h1>
 
             <div class="form-control">
@@ -26,13 +26,19 @@
 
                 <button class="btn" v-on:click="addNewNote">добавить </button>
                 <hr/>
-                <ul class="list">
-                    <li class="list-item" v-for="note in notes">
-                        {{ note }}
-                        
+                <ul class="list" v-if="notes.length !==0">
+
+                    <li class="list-item" v-for="(note, idx) in notes">
+                     {{ note }}
+                     <button class="btm danger" v-on:click="removeNode(idx)">DELETED</button>
                     </li>
-                    
-                </ul>
+                                
+                <li>
+                    <strong>общее количество записей: {{notes.length}} </strong>
+                </li>
+
+                </ul>                
+            <div v-if="notes.length === 0"> заметок пока нет, добавьте первую :)</div>
             </div>
 
         </div>
