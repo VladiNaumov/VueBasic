@@ -6,21 +6,18 @@ const App = {
             placeholderString: 'введите название заметки' ,
             title: 'список заметок',
             inputValue: '',
-            notes: ['a', 'b']
+            notes: ['a', 'b', 'c']
 
         }
     },
     methods:{
-        inputChangeHandler(event){
+        iputChangeHandler(event){
             this.inputValue = event.target.value
 
-        },
-        addNewNote(){
-            this.notes.push(this.inputValue)
-            this.inputValue = ''
-        },
-        
+        }
     }
 }
 
 Vue.createApp(App).mount('#app')
+
+// введение в консоль сообщений, и вывод сообщений с массива 

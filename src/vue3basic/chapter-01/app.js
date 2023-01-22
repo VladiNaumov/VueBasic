@@ -11,3 +11,5 @@ const App = {
 }
 
 Vue.createApp(App).mount('#app')
+
+// реализация счетчик по нажатию клавиши

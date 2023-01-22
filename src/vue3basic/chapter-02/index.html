@@ -14,24 +14,29 @@
             <h1>{{ title }}</h1>
 
             <div class="form-control">
-                <input 
-                type="text" 
+                <input type="text" 
                 v-bind:placeholder="placeholderString" 
                 v-bind:calue="inputValue"
-                v-on:input="inputChangeHandler"
-                v-on:keypress.enter="addNewNote"
+                v-on:input="iputChangeHandler"
                 />
 
             </div>
 
-                <button class="btn" v-on:click="addNewNote">добавить </button>
-                <hr/>
+                <button class="btn">добавить </button>
                 <ul class="list">
-                    <li class="list-item" v-for="note in notes">
-                        {{ note }}
+                    <li class="list-item">
+                        {{ notes[0] }}
                         
                     </li>
-                    
+                    <li class="list-item">
+                        
+                        {{ notes[1] }}
+                       
+                    </li>
+                    <li class="list-item">
+                        
+                        {{ notes[2] }}
+                    </li>
                 </ul>
             </div>
 
