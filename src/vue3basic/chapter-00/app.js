@@ -13,9 +13,17 @@ data:() => ({
         age: ' : 44'
     },
 
-    notes: ["Omena", "Peruna"],
+    people: [
+        {name: 'Vladilen', budget: 4200},
+        {name: 'Elena', budget: 3500},
+        {name: 'Victoria', budget: 1700}
+    ],
+   
+
+    notes: ["Omena", "Peruna"]
     
     }),
+
 
     // это метод для работы с данными
     methods:{
