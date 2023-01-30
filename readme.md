@@ -10,4 +10,8 @@ chapter-03: добавлено удаление элементов
 
 chapter-04: добавлено чтение данных с объекта
 
+chapter-05: работа с виртуальным  DOM
+
+chapter-06: мини проект
+
 Src/book: Book code Vue.js in Action
