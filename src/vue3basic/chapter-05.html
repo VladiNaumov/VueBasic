@@ -1,5 +1,22 @@
-const app = Vue.createApp({
-    data() {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Как работает Vue</title>
+  <link rel="stylesheet" href="theme.css" />
+</head>
+<body>
+
+<div class="container pt-5" id="app1"></div>
+<div class="container pt-5" id="app2"></div>
+
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+
+const vueApp = Vue.createApp({
+  
+  data() {
       return {
         title: 'Это из свойства template'
       }
@@ -19,12 +36,11 @@ const app = Vue.createApp({
       }
     }
     
-  })
-  
-  app.mount('#app')
+  }).mount('#app1')
 
 
   // работа с виртуальным  DOM он работает быстрее чем нативный DOM, это есть так называемая оптимизация (ускорение работы кода )
+  
 
 const h = Vue.h
 Vue.createApp({
@@ -52,6 +68,10 @@ Vue.createApp({
           this.title = 'Изменили!'
         }
       }
+	
+}).mount('#app2');
 
-  }).mount('#app2')
- 
+
+</script>
+</body>
+</html>

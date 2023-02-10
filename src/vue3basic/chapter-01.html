@@ -22,7 +22,25 @@
     </div>
 
 <script src="https://unpkg.com/vue@next"></script>
-<script src="app.js"></script>
+
+<script>
+
+const vueApp = Vue.createApp({
+    // имя метода data() - здесь хранятся данные 
+    data(){
+
+    return {
+        counter: 0,
+        title: 'Счетчик (Counter)'
+
+    }}
+  
+   
+	
+}).mount('#app');
+
+
+</script>
 
 
 </body>
