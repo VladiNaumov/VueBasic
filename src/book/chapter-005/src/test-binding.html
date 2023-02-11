@@ -1,0 +1,97 @@
+<html>
+	<head>
+		<title>data-binding</title>
+		<script src="https://unpkg.com/vue@next"></script>	
+		<link rel="stylesheet" type="text/css" href="app.css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"crossorigin="anonymous">
+	</head>
+	
+<body>
+    <div id="app">
+      
+        <h1 v-text="sitename"></h1>	
+      	
+    </div>
+	
+<script>
+	
+
+Vue.createApp({
+  
+   data(){
+
+        return {
+            sitename: 'HELLO Im Vue.js'	
+
+        }
+	},
+	method:{
+		changeTitle() {
+          console.log(this.sitename)
+          
+        }
+	
+	},
+	
+}).mount('#app');
+
+
+
+
+/*
+
+Vue.createApp({
+  
+   
+	
+}).mount('#app');
+*/
+
+
+const VueApp = {
+  data() {
+    return {
+      sitename: 'HELLO Im Vue.js'
+    }
+  },
+  methods: {
+    
+  },
+  computed: {
+  
+  },
+  beforeCreate(){
+        console.log('beforeCreate()');
+    },
+    created(){
+        console.log('created()');
+    },
+    beforeMount(){
+        console.log('beforeMount()');
+    },
+    mounted(){
+        console.log('mounted()');
+    },
+    beforeUpdate(){
+        console.log('beforeUpdate()');
+    },
+    updated(){
+        console.log('updated()');
+    },
+    beforeUnmount(){
+        console.log('beforeUnmount()');
+    },
+    unmounted(){
+        console.log('unmounted()');
+    }
+    
+}
+
+Vue.createApp(VueApp).mount('#app')
+
+
+	
+</script>
+
+  </body>
+</html>

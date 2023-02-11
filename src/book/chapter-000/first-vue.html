@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>First-vue</title>
+    <script src="https://unpkg.com/vue@next"></script>	
+    <link rel="stylesheet" type="text/css" href="app.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"crossorigin="anonymous">
+  </head>
+  
+  <body>
+  
+    <div id="app">
+	
+	<h1>First-vue</h1>
+		
+    <h2 v-text="sitename"></h2>	
+     	
+	</div>
+	
+	<script>
+	
+
+   
+Vue.createApp({
+	  
+		data(){
+
+			return {
+				sitename: 'Vue.js Pet Depot'	
+
+			}
+		},
+		
+}).mount('#app');
+
+	
+	</script>
+	
+	
+	
+	
+  </body>
+</html>

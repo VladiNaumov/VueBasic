@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://unpkg.com/vue"></script>
+</head>
+  <body>
+  <div id="app">
+    <my-component/>
+
+  </div>
+  <script type="text/x-template" id="my-component">
+    <p>
+      Hello from x-template, Hello World
+    </p>
+  </script>
+  <script>
+  
+  
+  const MyComponent = {
+    template: '#my-component'
+  }
+  
+  
+ 
+  
+vueApp = Vue.createApp({
+  
+  components: {'my-component': MyComponent}
+    
+}).mount('#app');
+  </script>
+  </body>
+</html>
