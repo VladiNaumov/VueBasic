@@ -16,6 +16,7 @@
 
 ### Src/book: Book code Vue.js in Action
 
+### Setup
 
 /* когда зависимости не подгружены */
 npm install 
