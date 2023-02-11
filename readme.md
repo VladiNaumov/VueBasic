@@ -15,3 +15,25 @@
 - chapter-06: мини проект
 
 ### Src/book: Book code Vue.js in Action
+
+
+/* когда зависимости не подгружены */
+npm install 
+
+
+/* интерактивно генерировать файл package.json с помощью команды */
+npm init
+
+/* установка parcel */
+npm install parcel
+npm install parcel-bundler
+
+/* потом написать */
+
+"scripts": {
+    "serve": "parcel ./src/index.html -p 4200 --open",
+    "build": "parcel build ./src/index.html --no-source-maps",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+ npm run serve
