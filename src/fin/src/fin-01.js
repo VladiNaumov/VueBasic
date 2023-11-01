@@ -15,16 +15,19 @@ Vue.createApp({
 
     methods:{
 
-        ChangeHandler(event){
+        inputChangeHandler_a(event){
             this.inputValue_a = event.target.value
-      
+            console.log('inputChangeHandler_a', event.target.value)
+    
             
         },
 
-        inputChangeHandler(event){
+        inputChangeHandler_b(event){
     
             this.inputValue_b = event.target.value
+            console.log('inputChangeHandler_b', event.target.value)
             
+
         },
 
         addNoteOne(){

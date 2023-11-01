@@ -22,7 +22,7 @@
                         type="text" 
                         v-bind:placeholder="placeholderString" 
                         v-bind:calue="inputValue_a"
-                        v-on:input="ChangeHandler" 
+                        v-on:input="inputChangeHandler_a" 
                         v-on:keypress.enter="addNoteOne"
                         /> selaista kysymyksiä, joihin tiedätte jo vastauksen?
 
@@ -33,7 +33,7 @@
                         type="text" 
                         v-bind:placeholder="placeholderString" 
                         v-bind:calue="inputValue_b"
-                        v-on:input="inputChangeHandler" 
+                        v-on:input="inputChangeHandler_b" 
                         v-on:keypress.enter="addNoteOne"
                         />   mielellämme  lavatansseissa
 
