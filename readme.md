@@ -14,6 +14,8 @@
 
 - chapter-06: мини проект
 
+- fin: мини проект (тест на знание глаголов в финском языке)
+
 ### Src/book: Book code Vue.js in Action
 
 ### Setup
